@@ -1,165 +1,159 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="js" lang="pl">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Jakub Snopkiewicz - portfolio</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="scss/components/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/app.js"></script>
   </head>
   <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="callout">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
+    <div class="container">
+        <header data-sticky-container>
+          <nav class="top-bar" data-sticky data-options="marginTop:0;">
+            <div class="top-bar-title">
+              <p><strong>JS - portfolio</strong></p>
+            </div>
+            <div class="top-bar-right">
+              <ul class="menu" data-magellan>
+                <li><a href="#aboutme"><p>O MNIE</p></a></li>
+                <li><a href="#portfolio"><p>PORTFOLIO</p></a></li>
+                <li><a href="#contact"><p>KONTAKT</p></a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+      <main>
+        <section class="welcome">
           <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
+            <div class="small-12 columns">
+              <h1>JAKUB SNOPKIEWICZ</h1>
+              <p>.FRONT-END DEVELOPER, .WEB-DEVELOPER</p>
             </div>
           </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
-    </div>
+        </section>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+        <section class="about" id="aboutme" data-magellan-target="aboutme">
+          <div class="row">
+            <div class="small-12 columns">
+              <h2>O MNIE</h2><hr class="lineOne"/><br/>
+              <div class="row description" data-interchange="[img/pusty.png, small], [img/open_computer2.jpg, medium], [img/open_computer2.jpg, large]">
+                <div class="medium-10 medium-offset-2 columns">
+                <p>Jestem początkującym Front-End Developerem szukającym swojej pierwszej pracy jako junior.
+                Posiadam dobrą wiedzę odnośnie <strong>HTML5</strong> oraz <strong>CSS3 (SCSS).</strong> Wiekszość projektów jakie zobaczycie na tej stronie wykonane zostały we framework'u <strong>Foundation 6</strong> i to w nim póki co czuję się najswobodniej. Do niektorych stron pisałem tez proste
+                skrypty <strong>JS'owe</strong> wykorzystujace równiez bibliotekę <strong>jQuery.</strong> Jest to jednak element do którego chciałbym przyłożyć wiekszą uwage w najbliższej przyszłosci. Posiadam równiez podstawową wiedzę odnośnie systemu kontroli wersji <strong>Git</strong> oraz task runner'a <strong>Gulp.</strong>
+                Brałem udział w warsztatach projektowania aplikacji internetowych <a href="http://camp.efigence.com/"><strong>Efigence Camp 2016.</strong></a>
+                </p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <hr class="line"/>
+          <div class="logos">
+            <h4>NARZĘDZIA I TECHNOLOGIE</h4>
+            <div class="row">
+              <div class="medium-9 medium-centered columns">
+                <img class="logo" src="img/HTML5.png" alt="HTML5"/>
+                <img class="logo" src="img/CSS3.png"  alt="CSS3"></img>
+                <img class="logo" src="img/js.png" alt="JS"></img>
+                <img class="logo" src="img/photoshop.png" alt="photoshop"></img>
+                <img class="logo" src="img/illustrator.png" alt="illustrator"></img>
+                <img class="logo" src="img/git.png" alt="github"></img>
+              </div>
+            </div>
+            <div class="row align-center">
+              <div class="medium-6 medium-centered columns">
+                <img class="logo" src="img/jQuery.png" alt="jquery"></img>
+                <img class="logo" src="img/found6.png" alt="foundation6"></img>
+                <img class="logo" src="img/gulp.png" alt="gulp"></img>
+                <img class="logo" src="img/sass.png" alt="sass"></img>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="primary callout">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
+        <div class="pause">
+          <div class="inPause">
+
           </div>
         </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
+
+        <section class="projects" id="portfolio" data-magellan-target="portfolio">
+          <h2>PORTFOLIO</h2><hr/><br/>
           <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="input-group">
-                  <input type="text" placeholder="small-9.columns" class="input-group-field" />
-                  <span class="input-group-label">.com</span>
+            <div class="small-12 small-centered columns">
+              <div class="flex">
+                <div class="project one">
+                  <div class="blackSqr">
+                    <div class="blackStripe">
+                      <p><strong>Login page - Efigence Camp 2016</strong></p>
+                      <span>HTML5, CSS3(SCSS), JS, jQuery, Foundation</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="project two">
+                  <div class="blackSqr">
+                    <div class="blackStripe">
+                      <p><strong>Dashboard page - Efigence Camp 2016</strong></p>
+                      <span>HTML5, CSS3(SCSS), JS, jQuery, Foundation</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="project three">
+                  <div class="blackSqr">
+                    <div class="blackStripe">
+                      <p><strong>Grywalizacja - Efigence Camp 2016 </strong></p>
+                      <span>HTML5, CSS3(SCSS), JS, jQuery, Foundation</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="project four">
+                  <div class="blackSqr">
+                    <div class="blackStripe">
+                      <p><strong>u Zbycha</strong></p>
+                      <span>HTML5, CSS3, JS, jQuery, Bootstrap3</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="project five">
+                  <div class="blackSqr">
+                    <div class="blackStripe">
+                      <p><strong>FIGHTING GAMES CHALLENGE</strong></p>
+                      <span>Projekt graficzny wykonany w Adobe Photoshop</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>     
+        </section>
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="button">Simple Button</a><br/>       
-        <a href="#" class="success button">Success Btn</a><br/>
-        <a href="#" class="alert button">Alert Btn</a><br/>
-        <a href="#" class="secondary button">Secondary Btn</a></p>           
-        <div class="callout">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
-      </div>
+        <section class="contact" id="contact" data-magellan-target="contact">
+          <div class="row">
+            <div class="medium-6 columns contactForm">
+              <h3>KONTAKT</h3>
+              <hr/>
+              <ul class="contactOptions">
+                <li><a href="#"><i class="fa fa-phone fa-lg" aria-hidden="true"></i>&nbsp; +48 504 443 519</a></li>
+                <li><a href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>&nbsp; jakubsnopkiewicz@gmail.com</a></li>
+              </ul>
+                <input type="text" placeholder="Imie & Nazwisko">
+                <input type="text" placeholder="E-mail">
+                <textarea placeholder="Wiadmosc"></textarea>
+              <input type="submit" class="button expanded" value="WYŚLIJ">
+            </div>
+          </div></img>
+        </section>
+<!-- -->
+      </main>
+      <footer>
+        <p>© <span class="highlight"><strong>JS</strong></span> All Rights Reserved.</p>
+      </footer>
     </div>
-
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
