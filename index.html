@@ -4,19 +4,23 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jakub Snopkiewicz - portfolio</title>
+    <title>Jakub Snopkiewicz - Portfolio</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="scss/components/font-awesome-4.6.3/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/app.js"></script>
   </head>
-  <body>
-    <div class="container">
-        <header data-sticky-container>
-          <nav class="top-bar" data-sticky data-options="marginTop:0;">
-            <div class="top-bar-title">
-              <p><strong>JS - portfolio</strong></p>
+  <body >
+
+<!-- data-sticky-container
+      data-sticky data-options="marginTop:0;" -->
+      <header data-sticky-container>
+        <nav data-sticky data-options="marginTop:0;">
+        <div class="row navRow" >
+          <div class="top-bar">
+            <div class="top-bar-left">
+              <p><strong>JS - Portfolio</strong></p>
             </div>
             <div class="top-bar-right">
               <ul class="menu" data-magellan>
@@ -25,14 +29,17 @@
                 <li><a href="#contact"><p>KONTAKT</p></a></li>
               </ul>
             </div>
-          </nav>
-        </header>
+          </div>
+        </div>
+      </nav>
+      </header>
+
       <main>
         <section class="welcome">
           <div class="row">
             <div class="small-12 columns">
               <h1>JAKUB SNOPKIEWICZ</h1>
-              <p>.FRONT-END DEVELOPER, .WEB-DEVELOPER</p>
+              <p><span class="jr">.jr</span>.FRONT-END DEVELOPER, .WEB-DEVELOPER</p>
             </div>
           </div>
         </section>
@@ -44,8 +51,8 @@
               <div class="row description" data-interchange="[img/pusty.png, small], [img/open_computer2.jpg, medium], [img/open_computer2.jpg, large]">
                 <div class="medium-10 medium-offset-2 columns">
                 <p>Jestem początkującym Front-End Developerem szukającym swojej pierwszej pracy jako junior.
-                Posiadam dobrą wiedzę odnośnie <strong>HTML5</strong> oraz <strong>CSS3 (SCSS).</strong> Wiekszość projektów jakie zobaczycie na tej stronie wykonane zostały we framework'u <strong>Foundation 6</strong> i to w nim póki co czuję się najswobodniej. Do niektorych stron pisałem tez proste
-                skrypty <strong>JS'owe</strong> wykorzystujace równiez bibliotekę <strong>jQuery.</strong> Jest to jednak element do którego chciałbym przyłożyć wiekszą uwage w najbliższej przyszłosci. Posiadam równiez podstawową wiedzę odnośnie systemu kontroli wersji <strong>Git</strong> oraz task runner'a <strong>Gulp.</strong>
+                Posiadam dobrą wiedzę odnośnie <strong>HTML5</strong> oraz <strong>CSS3 (SCSS).</strong> Wiekszość projektów jakie zobaczycie na tej stronie wykonane zostały we framework'u <strong>Foundation 6</strong> i to w nim póki co czuję się najswobodniej. Do niektórych stron pisałem też proste
+                skrypty <strong>JS'owe</strong> wykorzystujące równiez bibliotekę <strong>jQuery.</strong> Jest to jednak element do którego chciałbym przyłożyć wiekszą uwagę w najbliższej przyszłosci. Posiadam również podstawową wiedzę odnośnie systemu kontroli wersji <strong>Git</strong> oraz task runner'a <strong>Gulp.</strong>
                 Brałem udział w warsztatach projektowania aplikacji internetowych <a href="http://camp.efigence.com/"><strong>Efigence Camp 2016.</strong></a>
                 </p>
               </div>
@@ -77,9 +84,6 @@
         </section>
 
         <div class="pause">
-          <div class="inPause">
-
-          </div>
         </div>
 
         <section class="projects" id="portfolio" data-magellan-target="portfolio">
@@ -87,46 +91,56 @@
           <div class="row">
             <div class="small-12 small-centered columns">
               <div class="flex">
-                <div class="project one">
-                  <div class="blackSqr">
-                    <div class="blackStripe">
-                      <p><strong>Login page - Efigence Camp 2016</strong></p>
-                      <span>HTML5, CSS3(SCSS), JS, jQuery, Foundation</span>
+                <a href="projekty/Efi/login.html">
+                  <div class="project one">
+                    <div class="blackSqr">
+                      <div class="blackStripe">
+                        <p><strong>Login page - Efigence Camp 2016</strong></p>
+                        <span>HTML5, CSS3(SCSS), JS, jQuery, Foundation</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="project two">
-                  <div class="blackSqr">
-                    <div class="blackStripe">
-                      <p><strong>Dashboard page - Efigence Camp 2016</strong></p>
-                      <span>HTML5, CSS3(SCSS), JS, jQuery, Foundation</span>
+                </a>
+                <a href="projekty/Efi/dashboard.html">
+                  <div class="project two">
+                    <div class="blackSqr">
+                      <div class="blackStripe">
+                        <p><strong>Dashboard page - Efigence Camp 2016</strong></p>
+                        <span>HTML5, CSS3(SCSS), JS, jQuery, Foundation</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="project three">
-                  <div class="blackSqr">
-                    <div class="blackStripe">
-                      <p><strong>Grywalizacja - Efigence Camp 2016 </strong></p>
-                      <span>HTML5, CSS3(SCSS), JS, jQuery, Foundation</span>
+                </a>
+                <a href="projekty/Efi/grywalizacja.html">
+                  <div class="project three">
+                    <div class="blackSqr">
+                      <div class="blackStripe">
+                        <p><strong>Grywalizacja - Efigence Camp 2016 </strong></p>
+                        <span>HTML5, CSS3(SCSS), JS, jQuery, Foundation</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="project four">
-                  <div class="blackSqr">
-                    <div class="blackStripe">
-                      <p><strong>u Zbycha</strong></p>
-                      <span>HTML5, CSS3, JS, jQuery, Bootstrap3</span>
+                </a>
+                <a href="projekty/Bootstrap3/main.html">
+                  <div class="project four">
+                    <div class="blackSqr">
+                      <div class="blackStripe">
+                        <p><strong>u Zbycha</strong></p>
+                        <span>HTML5, CSS3, JS, jQuery, Bootstrap3</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="project five">
-                  <div class="blackSqr">
-                    <div class="blackStripe">
-                      <p><strong>FIGHTING GAMES CHALLENGE</strong></p>
-                      <span>Projekt graficzny wykonany w Adobe Photoshop</span>
+                </a>
+                <a href="projekty/MAIN7.jpg">
+                  <div class="project five">
+                    <div class="blackSqr">
+                      <div class="blackStripe">
+                        <p><strong>FIGHTING GAMES CHALLENGE</strong></p>
+                        <span>Projekt graficzny wykonany w Adobe Photoshop</span>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -141,19 +155,19 @@
                 <li><a href="#"><i class="fa fa-phone fa-lg" aria-hidden="true"></i>&nbsp; +48 504 443 519</a></li>
                 <li><a href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>&nbsp; jakubsnopkiewicz@gmail.com</a></li>
               </ul>
-                <input type="text" placeholder="Imie & Nazwisko">
+                <input type="text" placeholder="Imię & Nazwisko">
                 <input type="text" placeholder="E-mail">
-                <textarea placeholder="Wiadmosc"></textarea>
+                <textarea placeholder="Wiadomość"></textarea>
               <input type="submit" class="button expanded" value="WYŚLIJ">
             </div>
-          </div></img>
+          </div>
         </section>
 <!-- -->
       </main>
       <footer>
         <p>© <span class="highlight"><strong>JS</strong></span> All Rights Reserved.</p>
       </footer>
-    </div>
+
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efi3 - Login </title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="images/foundation-icons/foundation-icons.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="containerLogin">
+      <div class="login-background">
+        <div class="row">
+          <div class="small-12 small-centered medium-3 medium-align-right column">
+            <div class="logo">
+              <a><img src="images/efi_logo.png" alt="efi3"></a>
+            </div>
+          </div>
+          <div class="small-12 small-centered medium-9 large-6 large-centered columns end">
+            <div class="box bg-blue">
+              <header>
+                <h1>Login</h1>
+                <p>Aby zaimportowac dane zaloguj sie do swojego banku</p>
+              </header>
+              <form>
+                <div class="avatar">
+                  <img src="images/avatar.jpg" alt="avatar"/>
+                </div>
+                <span class="nrID">12756453</span>&nbsp;<span class="info badge"><i class="fi-x"></i></span>
+                <br>
+                <div class="row">
+                  <div class="small-11 small-centered columns">
+                      <input type="text" class="inputPass">
+                  </div>
+                  <div class="small-1 small-centered columns keyboard">
+                      <a href="#"><img src="images/keyboard.png" alt="key_pic"></a>
+                  </div>
+                </div>
+<!-- Komunikat "Nieprawidłowe hasło -->
+                <div class="passWrong">
+                  <div class="arrow_up">
+                  </div>
+                  <div class="czer_pasek">
+                      <span class="wrongPassTxt"> Nieprawidłowe hasło </span><i class="fi-x closeX"></i>
+                  </div>
+                </div>
+<!-- Przyciski Select Other i GO -->
+                <div class="row">
+                  <div class="small-centered medium-4 medium-offset-1 column"><a href="#"><span class="selOther">SELECT OTHER</span></a></div>
+                  <div class="small-centered medium-4 column"><button type="submit" class="button logBtn"><span>GO</span></button></div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+<!-- Stopka -->
+        <footer>
+          <div class="row">
+            <div class="small-12 medium-6 medium-offset-3 columns">
+                <ul class="menu align-center footLog">
+                  <li><a href="#">SECURITY</a></li>
+                  <li><a href="#">LOGGIN IN</a></li>
+                  <li><a href="#">CONTACT</a></li>
+                  <li class="align-right"><a href="#"><i class="fi-social-facebook"></i></a></li>
+                </ul>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+  </html>
