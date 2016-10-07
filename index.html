@@ -6,32 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jakub Snopkiewicz - Portfolio</title>
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="scss/components/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="components/font-awesome-4.6.3/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/app.js"></script>
   </head>
   <body >
-
-<!-- data-sticky-container
-      data-sticky data-options="marginTop:0;" -->
       <header data-sticky-container>
-        <nav data-sticky data-options="marginTop:0;">
-        <div class="row navRow" >
-          <div class="top-bar">
-            <div class="top-bar-left">
-              <p><strong>JS - Portfolio</strong></p>
+        <nav data-sticky data-options="marginTop:0;" data-sticky-on="small">
+          <div class="row navRow">
+            <div class="title-bar" data-responsive-toggle="responsive-topbar" data-hide-for="medium">
+              <span class="menu-text show-for-small-only"><strong>JS-portfolio</strong></span>
+              <button class="menu-icon dark float-right" type="button" data-toggle></button>
             </div>
-            <div class="top-bar-right">
-              <ul class="menu" data-magellan>
-                <li><a href="#aboutme"><p>O MNIE</p></a></li>
-                <li><a href="#portfolio"><p>PORTFOLIO</p></a></li>
-                <li><a href="#contact"><p>KONTAKT</p></a></li>
-              </ul>
+            <div class="top-bar">
+              <div class="top-bar-left">
+                <span class="hide-for-small-only"><strong>JS - Portfolio</strong></span>
+              </div>
+              <div class="top-bar-right" id="responsive-topbar">
+                <ul class="vertical medium-horizontal menu">
+                  <li><a href="#aboutme"><p>O MNIE</p></a></li>
+                  <li><a href="#portfolio"><p>PORTFOLIO</p></a></li>
+                  <li><a href="#contact"><p>KONTAKT</p></a></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
       </header>
 
       <main>
@@ -151,14 +152,17 @@
             <div class="medium-6 columns contactForm">
               <h3>KONTAKT</h3>
               <hr/>
+              <div id="info"></div>
               <ul class="contactOptions">
                 <li><a href="#"><i class="fa fa-phone fa-lg" aria-hidden="true"></i>&nbsp; +48 504 443 519</a></li>
                 <li><a href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>&nbsp; jakubsnopkiewicz@gmail.com</a></li>
               </ul>
-                <input type="text" placeholder="Imię & Nazwisko">
-                <input type="text" placeholder="E-mail">
-                <textarea placeholder="Wiadomość"></textarea>
-              <input type="submit" class="button expanded" value="WYŚLIJ">
+              <form method="post" name="myemailform" action="contact.php">
+                <input type="text" name="name" placeholder="Imię & Nazwisko" required>
+                <input type="text" name="email" placeholder="E-mail" required>
+                <textarea name="message" placeholder="Wiadomość"></textarea>
+                <input type="submit" class="button expanded" value="WYŚLIJ">
+              </form>
             </div>
           </div>
         </section>

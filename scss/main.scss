@@ -17,7 +17,7 @@ a {
 }
 
 nav{
-  height: 50px;
+  min-height: 45px;
   width: 100%;
   background-color: white;
   border-bottom: 1px solid white;
@@ -25,6 +25,16 @@ nav{
 }
 .navRow{
   height: 100%;
+}
+
+.title-bar{
+  font-size: 20px;
+  color: #2559ae;
+  background-color: white;
+  height: auto;
+  width: 100%;
+  .menu-icon{
+  }
 }
 .top-bar{
   overflow: hidden;
@@ -35,6 +45,8 @@ nav{
   margin: auto;
   padding: 0;
   .top-bar-left{
+    padding: 10px 0 0 0;
+    margin: auto;
     font-size: 28px;
     color: #225bb7;
   }
@@ -48,7 +60,7 @@ nav{
       border: none;
       height: 100%;
       li{
-        padding: 0 10px 0 10px;
+        padding: 10px 10px 0 10px;
         -moz-transition: background-color .4s;
         a{
           color: #225bb7;
@@ -265,6 +277,28 @@ section{
 }
 
 //Kontakt test
+#info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 300px;
+  padding: 10px;
+  margin: 10px auto;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.error{
+  border-color: red;
+  background: #FF8080;
+}
+
+.ok{
+  border-color: #004000;
+  background: #7CD196;
+}
+
 .contact{
   position: relative;
   background-blend-mode: soft-light;
