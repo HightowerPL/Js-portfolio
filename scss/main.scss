@@ -23,9 +23,6 @@ nav{
   border-bottom: 1px solid white;
   box-shadow: 0px 1px 5px rgba(0, 0, 0,0.5);
 }
-.navRow{
-  height: 100%;
-}
 
 .title-bar{
   font-size: 20px;
@@ -33,8 +30,6 @@ nav{
   background-color: white;
   height: auto;
   width: 100%;
-  .menu-icon{
-  }
 }
 .top-bar{
   overflow: hidden;
@@ -78,6 +73,7 @@ nav{
 }
 
 .welcome{
+  padding: 120px 0 140px 0;
   background-color: rgba(37, 89, 174, .7);
   background-blend-mode: soft-light;;
   background-image: url('../img/comp.jpg');
@@ -157,20 +153,15 @@ hr{
     margin:0 20px 20px 20px;
     max-width:90px;
     max-height:90px;
-    filter: blur(3px);
-    -moz-transition: filter .5s;
-    &:hover{
-      filter: blur(0px);
-    }
   }
 }
 
 .pause{
-  filter: blur(1px);
   background-blend-mode: color-dodge;
-  background-image: url('../img/pause.png');
-  background-repeat: no-repeat;
-  background-position: center ;
+  background-image: url('../img/oczy2.png'), url('../img/pause2.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center top;
+  background-size: auto, contain;
   background-color: #2559ae;
   width: 100%;
   height: 300px;
@@ -245,31 +236,31 @@ section{
     }
   }
   .one{
-    background-image: url("../img/projekty/login_mini.png");
+    background-image: url("../img/projekty/login_mini.jpg");
     background-size: cover;
     height: 300px;
     width: 400px;
   }
   .two{
-    background-image: url("../img/projekty/dash_mini.png");
+    background-image: url("../img/projekty/dash_mini.jpg");
     background-size: cover;
-    width: 600px;
     height: 300px;
+    width: 600px;
   }
   .three{
-    background-image: url("../img/projekty/gry_mini.png");
+    background-image: url("../img/projekty/gry_mini.jpg");
     background-size: cover;
     height: 300px;
     width: 600px;
   }
   .four{
-    background-image: url("../img/projekty/zbych_mini.png");
+    background-image: url("../img/projekty/zbych_mini.jpg");
     background-size: cover;
     height: 300px;
     width: 400px;
   }
   .five{
-    background-image: url("../projekty/MAIN7.jpg");
+    background-image: url("../img/projekty/fgc_mini.jpg");
     background-size: cover;
     height: 300px;
     width: 1025px;
