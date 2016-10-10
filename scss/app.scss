@@ -47,6 +47,8 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
-@import "main";
 @import "components/variables";
 @import "components/fonts";
+@import "mixins";
+@import "main";
+@import "mixins";

@@ -26,7 +26,7 @@ nav{
 
 .title-bar{
   font-size: 20px;
-  color: #2559ae;
+  color: $dblue;
   background-color: white;
   height: auto;
   width: 100%;
@@ -43,7 +43,7 @@ nav{
     padding: 10px 0 0 0;
     margin: auto;
     font-size: 28px;
-    color: #225bb7;
+    color: $dblue;
   }
   .top-bar-right{
     background-color: transparent;
@@ -56,13 +56,13 @@ nav{
       height: 100%;
       li{
         padding: 10px 10px 0 10px;
-        -moz-transition: background-color .4s;
+        @include transition(background-color .4s);
         a{
-          color: #225bb7;
-          -moz-transition: color .4s;
+          color: $dblue;
+          @include transition(color .4s);
         }
         &:hover{
-          background-color: #225bb7;
+          background-color: $dblue;
           a{
             color: white;
           }
@@ -123,8 +123,8 @@ hr{
 
 .description{
   height:auto;
-  background-image: url('../img/open_computer2.jpg');
-  background-size: 40%;
+  background-image: url('../img/open_computer33.jpg');
+  background-size: contain;
   background-repeat: no-repeat;
   padding-bottom: 140px;
   overflow: hidden;
@@ -137,7 +137,7 @@ hr{
   }
   p{
     line-height: 2.25;
-    color: #6e6e6e;
+    color: $ggrey;
     float: right;
   }
 }
@@ -158,9 +158,7 @@ hr{
 
 .pause{
   background-blend-mode: color-dodge;
-  background-image: url('../img/oczy2.png'), url('../img/pause2.png');
-  background-repeat: no-repeat, no-repeat;
-  background-position: center bottom, center top;
+  background: url('../img/oczy2.png') center bottom no-repeat, url('../img/pause2.png') center top no-repeat;
   background-size: auto, contain;
   background-color: #2559ae;
   width: 100%;
@@ -217,7 +215,7 @@ section{
       width:100%;
       height:0;
       background-color: rgba(0, 0, 0, 0.3);
-      transition: height .4s;
+      @include transition(height .4s);
     }
     .blackStripe{
       vertical-align: middle;
