@@ -1,0 +1,57 @@
+//Nawigacja
+
+nav{
+  min-height: 45px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid white;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0,0.5);
+}
+
+.title-bar{
+  font-size: 20px;
+  color: $dblue;
+  background-color: white;
+  height: auto;
+  width: 100%;
+}
+.top-bar{
+  overflow: hidden;
+  height: 100%;
+  background-color: white;
+  border: none;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  .top-bar-left{
+    padding: 10px 0 0 0;
+    margin: auto;
+    font-size: 28px;
+    color: $dblue;
+  }
+  .top-bar-right{
+    background-color: transparent;
+    height: 100%;
+    vertical-align: middle;
+    ul{
+      overflow: hidden;
+      background-color: transparent;
+      border: none;
+      height: 100%;
+      li{
+        padding: 10px 10px 0 10px;
+        @include transition(background-color .4s);
+        a{
+          color: $dblue;
+          @include transition(color .4s);
+        }
+        &:hover{
+          background-color: $dblue;
+          a{
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

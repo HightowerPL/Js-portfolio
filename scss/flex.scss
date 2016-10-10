@@ -1,0 +1,97 @@
+// Sekcja Portfolio z flexboxem
+
+.projects {
+  box-shadow: 0px 20px 30px rgba(0, 0, 0,0.5);
+  position: relative;
+  z-index: 2;
+  h2{
+    font-weight: 700;
+    text-align: center;
+    color: black;
+  }
+}
+
+.flex{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  .project{
+    max-height: 400px;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    img{
+      width:100%;
+      height: auto;
+    }
+    &:hover{
+      cursor: pointer;
+      position: relative;
+      .blackSqr{
+        height: 100%;
+        .blackStripe{
+          opacity: 1;
+        }
+      }
+    }
+    .blackSqr{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width:100%;
+      height:0;
+      background-color: rgba(0, 0, 0, 0.3);
+      @include transition(height .4s);
+    }
+    .blackStripe{
+      vertical-align: middle;
+      line-height: 0px;
+      text-align:center;
+      vertical-align: middle;
+      padding-top: 10px;
+      opacity: 0;
+      height: auto;
+      z-index: 3;
+      position: absolute;
+      top: 40%;
+      height: 25%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+  .one{
+    background-image: url("../img/projekty/login_mini.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+  }
+  .two{
+    background-image: url("../img/projekty/dash_mini.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 600px;
+  }
+  .three{
+    background-image: url("../img/projekty/gry_mini.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 600px;
+  }
+  .four{
+    background-image: url("../img/projekty/zbych_mini.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+  }
+  .five{
+    background-image: url("../img/projekty/fgc_mini.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 1025px;
+  }
+}

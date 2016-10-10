@@ -49,6 +49,7 @@
 @include motion-ui-animations;
 @import "components/variables";
 @import "components/fonts";
-@import "mixins";
+@import "components/mixins";
+@import "nav";
+@import "flex";
 @import "main";
-@import "mixins";
