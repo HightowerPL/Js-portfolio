@@ -60,11 +60,9 @@ hr{
   z-index:2;
   h2{
     color: black;
-    float: right;
   }
   .lineOne{
-    border : 0;
-    height: 1px;
+
     background-image: linear-gradient(to right, rgba(116, 116, 116, 0), rgba(116, 116, 116, 0.75), rgba(116, 116, 116, 0.75));
   }
 }
@@ -76,6 +74,7 @@ hr{
   background-repeat: no-repeat;
   padding-bottom: 140px;
   overflow: hidden;
+  text-shadow: 5px 0px 5px white;
   a{
     color: #329e86;
     &:hover{
