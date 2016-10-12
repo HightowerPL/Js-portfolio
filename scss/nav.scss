@@ -1,56 +1,33 @@
-//Nawigacja
-
+//Navigation Bar
 nav{
-  min-height: 45px;
+  height: 55px;
   width: 100%;
+  overflow: hidden;
   background-color: white;
   border-bottom: 1px solid white;
   box-shadow: 0px 1px 5px rgba(0, 0, 0,0.5);
-}
-
-.title-bar{
-  font-size: 20px;
-  color: $dblue;
-  background-color: white;
-  height: auto;
-  width: 100%;
-}
-.top-bar{
-  overflow: hidden;
-  height: 100%;
-  background-color: white;
-  border: none;
-  width: 100%;
-  margin: auto;
-  padding: 0;
-  .top-bar-left{
-    padding: 10px 0 0 0;
-    margin: auto;
-    font-size: 28px;
-    color: $dblue;
-  }
-  .top-bar-right{
+  ul{
+    vertical-align: center;
     background-color: transparent;
-    height: 100%;
-    vertical-align: middle;
-    ul{
-      overflow: hidden;
-      background-color: transparent;
-      border: none;
-      height: 100%;
-      li{
-        padding: 10px 10px 0 10px;
-        @include transition(background-color .4s);
-        a{
-          color: $dblue;
-          @include transition(color .4s);
+    li{
+      margin: 0;
+      text-align: center;
+      margin: auto;
+      &.menuName{
+        width:50px;
+      }
+      p{
+        color: $dblue;
+      }
+      &:hover{
+        .item{
+          border-bottom: 1px solid $dblue;
         }
-        &:hover{
-          background-color: $dblue;
-          a{
-            color: white;
-          }
-        }
+      }
+      .badge{
+        text-shadow: 1px 1px #c88902, 2px 2px #c88902, 3px 3px #c88902, 4px 4px #c88902, 5px 5px #c88902, 6px 6px #c88902, 7px 7px #c88902, 8px 8px #c88902, 9px 9px #c88902, 10px 10px #c88902, 11px 11px #c88902;
+        font-size: 1rem;
+        overflow: hidden;
       }
     }
   }
