@@ -4,7 +4,7 @@ html, body{
 }
 
 a {
-  color: none;
+  color: black;
   &:link{
     color: none;
   }
@@ -12,7 +12,7 @@ a {
     color: none;
   }
   &:hover{
-    color: white;
+    color: none;
   }
 }
 
@@ -62,7 +62,6 @@ hr{
     color: black;
   }
   .lineOne{
-
     background-image: linear-gradient(to right, rgba(116, 116, 116, 0), rgba(116, 116, 116, 0.75), rgba(116, 116, 116, 0.75));
   }
 }
