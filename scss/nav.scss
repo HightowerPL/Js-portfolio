@@ -1,34 +1,61 @@
 //Navigation Bar
+header, nav{
+  margin-top: 0;
+  padding-top: 0;
+}
 nav{
   height: 55px;
   width: 100%;
   overflow: hidden;
   background-color: white;
-  border-bottom: 1px solid white;
   box-shadow: 0px 1px 5px rgba(0, 0, 0,0.5);
-  ul{
-    vertical-align: center;
+  ul.menu{
+    height: 45px;
     background-color: transparent;
     li{
-      margin: 0;
       text-align: center;
       margin: auto;
-      &.menuName{
-        width:50px;
+      padding: 10px 10px 0 10px;
+      a{
+        padding: 0;
       }
-      p{
-        color: $dblue;
+      .item{
+        font-weight: 400;
+        color: $ggrey;
       }
       &:hover{
         .item{
-          border-bottom: 1px solid $dblue;
+          font-weight: bold;
         }
       }
       .badge{
-        text-shadow: 1px 1px #c88902, 2px 2px #c88902, 3px 3px #c88902, 4px 4px #c88902, 5px 5px #c88902, 6px 6px #c88902, 7px 7px #c88902, 8px 8px #c88902, 9px 9px #c88902, 10px 10px #c88902, 11px 11px #c88902;
-        font-size: 1rem;
+        text-shadow: 1px 1px #c88902, 2px 2px #c88902, 3px 3px #c88902, 4px 4px #c88902, 5px 5px #c88902, 6px 6px #c88902, 7px 7px #c88902, 8px 8px #c88902, 9px 9px #c88902, 10px 10px #c88902, 11px 11px #c88902, 12px 12px #c88902, 13px 13px #c88902;
+        font-size: 1.2rem;
         overflow: hidden;
       }
+    }
+  }
+}
+
+@media (min-width: 640px) and (max-width:1023px){
+  .menu li{
+    width: 150px;
+    &.menuName{
+      padding: 8px 25px 0 0;
+    }
+    &.menuItem{
+      padding: 5px 50px 0 0;
+    }
+  }
+}
+@media (min-width: 1024px){
+  .menu{
+    .menuName{
+      padding: 8px 750px 0 10px;
+    }
+    .menuItem{
+      width: 125px;
+      margin: 0 0px 0 40px;
     }
   }
 }
