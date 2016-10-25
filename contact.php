@@ -23,7 +23,7 @@ $mail->AddAddress ("jakubsnopkiewicz@gmail.com","Jakub Snopkiewicz");    //adres
                                                     //adresata, do którego trafi wiadomość
 if($mail->Send())    //sprawdzenie wysłania, jeśli wiadomość została pomyślnie wysłana
     {
-        echo 'E-mail został wysłany'; //wyświetl ten komunikat
+        echo 'E-mail został wysłany <br><br> <a href="http://www.js-portfolio.pl/">Powrót</a>'; //wyświetl ten komunikat
         }
     else    //w przeciwnym wypadku
         {

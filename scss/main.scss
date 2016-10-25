@@ -24,7 +24,8 @@ section{
   padding: 120px 0 140px 0;
   background-color: rgba(37, 89, 174, .7);
   background-blend-mode: soft-light;;
-  background-image: url('../img/comp.jpg');
+  background-image: url('../img/code.jpg');
+  background-attachment: fixed;
   background-size: cover;
   position: relative;
   overflow: hidden;
@@ -144,6 +145,7 @@ hr{
   background-blend-mode: soft-light;
   background-image: url('../img/broda.jpg');
   background-color: rgba(53, 128, 250, 1);
+  background-attachment: fixed;
   background-size: cover;
   color:white;
   overflow: hidden;

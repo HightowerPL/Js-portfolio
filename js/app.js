@@ -1,4 +1,25 @@
 $(document).foundation();
+$('h1, .about, .menu, .pause, .projects, .contact').hide();
+$('h1').next().hide();
+
+$(document).ready(function(){
+  $('.about, .menu, .pause, .projects, .contact').fadeIn(1500);
+  $('h1').next().fadeIn(1500);
+  $('h1').fadeIn(1500);
+
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
 
 $(function(){
        $("#form").submit(function(e){
@@ -32,18 +53,3 @@ $(function(){
            e.preventDefault();
        })
     })
-
-$(document).ready(function(){
-	$('a[href^="#"]').on('click',function (e) {
-	    e.preventDefault();
-
-	    var target = this.hash;
-	    var $target = $(target);
-
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 900, 'swing', function () {
-	        window.location.hash = target;
-	    });
-	});
-});
