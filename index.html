@@ -160,18 +160,19 @@
 <!-- Contact "Panel" -->
         <section class="contact" id="contact" data-magellan-target="contact">
           <div class="row">
+            <div class="loader">Loading...</div>
+            <div class="info"></div>
             <div class="small-centered small-9 large-uncentered large-6 columns contactForm">
               <h3>KONTAKT</h3>
               <hr/>
-              <div id="info"></div>
               <ul class="contactOptions">
                 <li><a href="#"><i class="fa fa-phone fa-lg" aria-hidden="true"></i>&nbsp; +48 504 443 519</a></li>
                 <li><a href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>&nbsp; jakubsnopkiewicz@gmail.com</a></li>
               </ul>
-              <form method="post" name="myemailform" action="contact.php">
-                <input type="text" name="formName" placeholder="Imię & Nazwisko" required>
-                <input type="text" name="formMail" placeholder="E-mail" required>
-                <textarea name="formMessage" placeholder="Wiadomość"></textarea>
+              <form method="post" name="myemailform" class="form" action="mail.php">
+                <input type="text" name="formName" placeholder="Imię & Nazwisko">
+                <input type="text" name="formMail" placeholder="E-mail">
+                <textarea name="formMsg" placeholder="Wiadomość"></textarea>
                 <input type="submit" class="button expanded" value="WYŚLIJ">
               </form>
             </div>

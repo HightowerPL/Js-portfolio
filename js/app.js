@@ -21,12 +21,12 @@ $(document).ready(function(){
 	});
 });
 
-$(function(){
-       $("#form").submit(function(e){
-           var info=$("#info");
+  $(function(){
+       $(".form").submit(function(e){
+           var info=$(".info");
            var form=$(this);
            $.ajax({
-                url: "contact.php",
+                url: "mail.php",
                 dataType: "JSON",
                 type: "post",
                 data:form.serialize(),
@@ -47,7 +47,8 @@ $(function(){
                     info.addClass("error").removeClass("ok").html("Przepraszamy, ale wystąpił błąd podczas wysyłania informacji.")
                 },
                 complete: function(){
-                    info.show();
+                    info.fadeIn();
+                    info.delay(1500).fadeOut();
                 }
            });
            e.preventDefault();
