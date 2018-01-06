@@ -1,14 +1,17 @@
 $(document).foundation();
 
 $(document).ready(function(){
+  $('.test-nav').hide();
   var rellax = new Rellax('.rellax');
 
   $('.ham-icon').on('click', function(){
-    if ($(this).hasClass('active')) {
-      hideMenu();
-    } else {
-      showMenu();
-    }
+    $('.icon-wrapper i').toggleClass('fa-close fa-bars');
+    $('.test-nav').fadeToggle()
+    // if ($(this).hasClass('active')) {
+    //   hideMenu();
+    // } else {
+    //   showMenu();
+    // }
   });
 
   function showMenu(){
