@@ -20,8 +20,8 @@ if ($bledy)
     <ul>";
     foreach ($bledy as $b) $komunikat.="<li>".$b."</li>";
     $komunikat."</ul>";
-} else
-{
+}
+else {
 //jeśli nie ma błędów próbujemy wysłać maila
     $temat= "=?UTF-8?B?".base64_encode("Wiadomość z formularza JS-Web od ".$_POST['formName'])."?=";
     $naglowki = "Reply-to:".$_POST['formMail'].PHP_EOL;

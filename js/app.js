@@ -1,6 +1,45 @@
 $(document).foundation();
 
 $(document).ready(function(){
+  var rellax = new Rellax('.rellax');
+
+  $('.ham-icon').on('click', function(){
+    if ($(this).hasClass('active')) {
+      hideMenu();
+    } else {
+      showMenu();
+    }
+  });
+
+  function showMenu(){
+    console.log('show');
+
+    $('.ham-icon').addClass('active');
+    $('.test-menu li').each( function(index){
+      var $li = $(this);
+
+      setTimeout(function(){
+         $li.toggleClass('show-li');
+      }, 500 + index*500);
+    });
+  }
+
+  function hideMenu() {
+    console.log('hide');
+    $('.test-menu li').each( function(index){
+      var $li = $('.test-menu li').eq(2-index);
+
+      setTimeout(function(){
+         $li.toggleClass('show-li');
+      }, index*400);
+
+      setTimeout(function(){
+         $('.ham-icon').removeClass('active');
+      }, 1200);
+    });
+  }
+
+
   $('.welcome h1').each(function(i){
     $(this).animate({'opacity':'1', 'right':'0'},1500);
   });
@@ -24,39 +63,54 @@ $(document).ready(function(){
   $(function() {
       $(window).scroll( function(){
           var bottom_of_window = $(window).scrollTop() + $(window).height();
+          var middle_of_object, bottom_of_object;
 
-          $('.about').each(function(i){
-            var middle_of_object = $(this).offset().top + $(this).outerHeight()/2.5;
+          $('.fade-in').each(function(e) {
+            middle_of_object = $(this).offset().top + $(this).outerHeight()*0.5;
 
             if (bottom_of_window > middle_of_object ) {
               $(this).animate({'opacity':'1'},1000);
-              $('.about .slide-in-right').animate({'opacity':'1', 'right':'0'}, 1000);
             }
           });
 
-          $('.logos').each(function(i){
-            var middle_of_object = $(this).offset().top + $(this).outerHeight()/2;
+          $('.projects hr').each(function(e) {
+            bottom_of_object = $(this).offset().top + $(this).outerHeight()+ 200;
 
-            if (bottom_of_window > middle_of_object ) {
-              $('.logos .slide-in-left').animate({'opacity':'1', 'left':'0'},1300);
-              $('.logos .logo').each(function(i){
-                $(this).delay(i*200).animate({'opacity':'1'});
-              });
+            if (bottom_of_window > bottom_of_object) {
+              $('.projects h2').animate({'opacity':"1","top":"0"}, 1000);
+              $('.projects .fade-in').animate({'opacity':"1"}, 1000);
             }
           });
-          // if ($(window).width() < $(window).height()) {
-          //
-          // }
+
+          $('.slide-in-left').each(function(e){
+            bottom_of_object = $(this).offset().top + $(this).outerHeight();
+
+            if (bottom_of_window > bottom_of_object ) {
+              $(this).animate({'opacity':'1', 'left':'0'},1000);
+            }
+          });
+
+          $('.slide-in-right').each(function(e){
+            bottom_of_object = $(this).offset().top + $(this).outerHeight();
+
+            if (bottom_of_window > bottom_of_object ) {
+              $(this).animate({'opacity':'1', 'right':'0'},1000);
+            }
+          });
       });
 
-      $(".form").submit(function(e){
-          var info=$(".info");
-          var form=$(this);
+      $("form").submit(function(e){
+          var info = $(".info");
+          var form = $(this);
           $.ajax({
                url: "mail.php",
                dataType: "JSON",
                type: "post",
-               data:form.serialize(),
+               data: {
+                 formName: 'fdfd',
+                 formMail: 'fds@fd.fd',
+                 formMsg: 'fdfdfd'
+               },
                beforeSend: function(){
                    info.hide();
                },
@@ -70,7 +124,8 @@ $(document).ready(function(){
                       info.addClass("error").removeClass("ok").html(obj.text);
                    }
                },
-               error : function(){
+               error : function(response){
+                    console.log(response);
                    info.addClass("error").removeClass("ok").html("Przepraszamy, ale wystąpił błąd podczas wysyłania wiadomości.")
                },
                complete: function(){
