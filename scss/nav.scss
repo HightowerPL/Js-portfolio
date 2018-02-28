@@ -4,21 +4,22 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,.75);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 999;
   font-size: 20px;
   ul{
-    text-align: center;
+    position: absolute;
+    top:10%;
+    left: 20px;
+    padding-left: 20px;
     li{
       display: block;
       a{
         margin-bottom: 15px;
-        padding: 8px 30px;
+        padding: 0;
         transition: all .4s;
         &:hover{
-          background-color: rgba(0,0,0, .5);
+          padding-left: 5px;
+          color: #e79500;
         }
       }
       p{
@@ -27,10 +28,13 @@
     }
   }
 }
+.active{
+  position: relative;
+}
 .ham-icon{
   position: fixed;
-  top: 15px;
-  left: 180px;
+  top: 20px;
+  left: 20px;
   z-index: 1000;
 
   display: inline-flex;
@@ -47,7 +51,6 @@
     justify-content: center;
     align-items: center;
     z-index: 4;
-    position: relative;
     &:hover{
       cursor: pointer;
       i{
@@ -57,5 +60,11 @@
     i{
       color: #E16E19;
       font-size: 24px;
-    }  }
+    }
+  }
+}
+@media (min-width: 768px){
+  .test-nav{
+    font-size: 16px;
+  }
 }
