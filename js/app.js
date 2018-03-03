@@ -3,11 +3,11 @@ $(document).foundation();
 $(document).ready(function(){
   $('.test-nav').hide();
   $('.loader').fadeOut(800);
-  var rellax = new Rellax('.rellax');
+  var rellaxOn;
 
   $('.ham-icon').on('click', function(){
     $(this).toggleClass('active');
-    $('.icon-wrapper i').toggleClass('fa-close fa-bars');
+    $('.hamx').toggleClass('close');
     $('.test-nav').fadeToggle()
   });
 
@@ -30,7 +30,7 @@ $(document).ready(function(){
 	        window.location.hash = target;
 	    });
 
-      $('.icon-wrapper i').toggleClass('fa-close fa-bars');
+      $('.hamx').toggleClass('close');
       $('.test-nav').fadeToggle()
 	});
   function slideInRight(e) {
@@ -40,7 +40,12 @@ $(document).ready(function(){
       $(window).scroll( function(){
           var bottom_of_window = $(window).scrollTop() + $(window).height();
           var middle_of_object, bottom_of_object;
-
+          if (rellaxOn == undefined) {
+            if (bottom_of_window > $('.pause').offset().top){
+              var rellax = new Rellax('.rellax');
+              rellaxOn = 1;
+            }
+          }
           $('.fade-in').each(function(e) {
             middle_of_object = $(this).offset().top + $(this).outerHeight()*0.5;
 

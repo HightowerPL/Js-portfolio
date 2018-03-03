@@ -1,4 +1,32 @@
 //Navigation Bar
+.hamx{
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  hr{
+    margin: 0px 0 5px 0;
+    border-radius: 5px;
+    border: 1px solid #E16E19;
+    background-color: #e16e19;
+    transition: all .4s;
+    transform-origin: right center;
+    transform: rotate(0deg) ;
+    background-image: none;
+  }
+  &.close{
+    .one{
+      transform: rotate(-39deg) ;
+    }
+    .two{
+      opacity: 0;
+    }
+    .three{
+      transform: rotate(39deg);
+    }
+  }
+}
+
 .test-nav{
   position: fixed;
   width: 100%;
