@@ -42,7 +42,7 @@ $(document).ready(function(){
           var middle_of_object, bottom_of_object;
           if (rellaxOn == undefined) {
             if (bottom_of_window > $('.pause').offset().top){
-              var rellax = new Rellax('.rellax');
+              //var rellax = new Rellax('.rellax');
               rellaxOn = 1;
             }
           }
