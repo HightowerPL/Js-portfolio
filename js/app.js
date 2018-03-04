@@ -84,7 +84,7 @@ $(document).ready(function(){
           var info = $(".info");
           var form = $(this);
           $.ajax({
-               url: "mail.php",
+               url: "sendmail.php",
                dataType: "JSON",
                type: "post",
                data: {
