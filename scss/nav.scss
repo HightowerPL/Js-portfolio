@@ -1,4 +1,24 @@
 //Navigation Bar
+.ham-icon{
+  position: fixed;
+  top: 20px;
+  left: 10px;
+  z-index: 1000;
+
+  display: inline-flex;
+  align-items: center;
+  transition: all .4s;
+  background-color: transparent;
+  width: 50px;
+  height: 40px;
+  transition: all .4s;
+  border-radius: 2px 0 0 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+
 .hamx{
   width: 25px;
   height: 25px;
@@ -27,17 +47,17 @@
   }
 }
 
-.test-nav{
+.menu-bg{
   position: fixed;
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,.75);
-  z-index: 999;
+  z-index: 3;
   font-size: 20px;
   ul{
     position: absolute;
     top:10%;
-    left: 20px;
+    left: 10px;
     padding-left: 20px;
     li{
       display: block;
@@ -56,43 +76,12 @@
     }
   }
 }
-.active{
-  position: relative;
-}
-.ham-icon{
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 1000;
 
-  display: inline-flex;
-  align-items: center;
-  transition: all .4s;
-  .icon-wrapper{
-    background-color: transparent;
-    width: 50px;
-    height: 40px;
-    transition: all .4s;
-    border-radius: 2px 0 0 2px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 4;
-    &:hover{
-      cursor: pointer;
-      i{
-        color: #e79500;
-      }
-    }
-    i{
-      color: #E16E19;
-      font-size: 24px;
-    }
-  }
-}
 @media (min-width: 768px){
-  .test-nav{
-    font-size: 16px;
+  .menu-bg{
+    font-size: 24px;
+    ul{
+      top: 80px;
+    }
   }
 }
