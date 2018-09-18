@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website - Weekly WebDev Challenge #19</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Playfair+Display|Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="components/font-awesome/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="smallMenu">
+        <p class="smallMenuButton"><i class="fa fa-bars fa-lg"></i>&nbsp;&nbsp;&nbsp;<strong>Menu</strong></p>
+      </div>
+      <ul class="menu">
+        <li class="logo"><a href="#"><img src="components/img/logo.png" alt="logo"></a></li>
+        <li><a href="#">Flights</a></li>
+        <li><a href="#">Hotels</a></li>
+        <li><a href="#">Guides</a></li>
+        <li><a href="#">Popular</a></li>
+      </ul>
+      <form class="menuSrc">
+        <input class="menuSrcSubmit" id="search_submit" value=""  type="submit">
+        <input class="menuSrcText" id="search" name="SEARCH" placeholder='SEARCH' type="text" value="" >
+      </form>
+    </header>
+
+    <section class="jumbotron">
+      <div class="container2">
+        <h1>Fly with us</h1>
+      </div>
+    </section>
+
+    <div class="flightSearch">
+      <form>
+        <input type="text" placeholder="Current City">
+        <input type="text" placeholder="Destination">
+        <input type="date" value="YY/MM/DD">
+        <input type="date" value="YY/MM/DD">
+        <div class="people">
+          <img class="arrowUp" id="up"  src="components/img/arrowUP.png" alt="arrow up">
+          <input type="number" id="numField" class="peopleNumber" min="1" max="9" step="1" value="1">
+          <img class="arrowDown" id="down" src="components/img/arrowDOWN.png" alt="arrow down">
+        </div>
+        <input type="submit" value=">">
+        <!--<div class="arrow">
+          arr
+        </div>-->
+      </form>
+    </div>
+
+
+    <section class="whitePanel wp1">
+      <div class="container">
+        <h2>Find the cheapest flights</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <div class="images">
+          <img src="components/img/palm.png" class="palm" alt="palm"/>
+          <img src="components/img/ticket.png" class="ticket" alt="ticket"/>
+          <img src="components/img/dollar.png" class="dollar" alt="dollar"/>
+        </div>
+      </div>
+    </section>
+
+    <div class="pause p1">
+    </div>
+
+    <section class="whitePanel wp2">
+      <div class="container">
+        <h2>Popular Destinations</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
+      </div>
+      <div class="container2">
+        <div class="cities">
+
+          <div class="destination">
+            <a href="#openModal">
+            <div class="photo pOne"></div>
+            <div class="photo pTwo"></div>
+            <div class="photo pThree"></div>
+            <p class="city"><strong>NEW YORK</strong></p></a>
+          </div>
+
+          <div class="destination">
+            <div class="photo pOne"></div>
+            <div class="photo pTwo"></div>
+            <div class="photo pThree"></div>
+            <p class="city"><strong>DUBAI</strong></p>
+          </div>
+
+          <div class="destination">
+            <div class="photo pOne"></div>
+            <div class="photo pTwo"></div>
+            <div class="photo pThree"></div>
+            <p class="city"><strong>PARIS</strong></p>
+          </div>
+
+          <div class="destination">
+            <div class="photo pOne"></div>
+            <div class="photo pTwo"></div>
+            <div class="photo pThree"></div>
+            <p class="city"><strong>LONDON</strong></p>
+          </div>
+
+          <div class="destination">
+            <div class="photo pOne"></div>
+            <div class="photo pTwo"></div>
+            <div class="photo pThree"></div>
+            <p class="city"><strong>AMSTERDAM</strong></p>
+          </div>
+
+          <div class="destination">
+            <div class="photo pOne"></div>
+            <div class="photo pTwo"></div>
+            <div class="photo pThree"></div>
+            <p class="city"><strong>RIO DE JANERIO</strong></p>
+          </div>
+
+      </div>
+    </div>
+    <a href="#" class="endLink">VIEW MORE</a>
+    </section>
+
+    <div id="openModal" class="modalDialog">
+        <div class="modalContent">
+          <a href="#close" title="Close" class="close">+</a>
+          <div id="cityPhoto" class="cityPhoto">
+            <input type="button" class="modalPrevImg" value="<">
+            <input type="button" class="modalNextImg" value=">">
+          </div>
+          <div class="cityDescription">
+            <h3>New York</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#" class="endLink">BOOK FLIGHT</a>
+          </div>
+        </div>
+    </div>
+
+    <div class="pause p2">
+    </div>
+
+    <section class="whitePanel wp3">
+      <div class="container">
+        <h2>Hear our <br>customers' thoughts</h2>
+        <div class="line">
+          <hr class="v1"><i class="fa fa-heart fa-3x"></i><hr class="v2">
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+        <div class="slider">
+          <div class="slidePrev">
+          </div>
+
+          <div class="slideMain">
+            <p class="quote">
+              <img class="quoteAvatar" src="components/img/avatar2.jpg" alt="avatar"/>
+              <span class="markBegin">,,</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.<span class="markEnd">,,</span>
+            </p>
+          </div>
+
+          <div class="slideNext">
+          </div>
+        </div>
+
+      <h1><span class="commas">,,</span><br>We had the experience of our life.</h1><br/><br/>
+      <a href="#" class="endLink">GET STARTED</a>
+    </section>
+
+    <footer class="pause">
+      <img src="components/img/signature.png" alt="Harris Imran">
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

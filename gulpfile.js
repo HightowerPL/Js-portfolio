@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var watch = require('gulp-watch');
 var $    = require('gulp-load-plugins')();
 
 var sassPaths = [
@@ -19,6 +20,10 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['sass'], function() {
-  gulp.watch(['scss/**/*.scss'], ['sass']);
+gulp.task('default', gulp.series('sass'), function() {
+  gulp.watch(['scss/**/*.scss'], ['sass']).on('change', function(path, stats) {
+         console.log('File ' + path + ' was changed');
+     }).on('unlink', function(path) {
+         console.log('File ' + path + ' was removed');
+     });
 });

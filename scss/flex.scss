@@ -1,10 +1,6 @@
 // Portfolio section with flexbox
-.codepen{
-  width: 25px;
-  opacity: .8;
-  &:hover{
-    opacity: 1;
-  }
+.flex {
+  margin-top: 25px;
 }
 .projects {
   box-shadow: 0px 20px 30px rgba(0, 0, 0,0.5);
@@ -32,7 +28,6 @@
     opacity: 0;
   }
 }
-
 .flex{
   width: 100%;
   height: 100%;
@@ -46,7 +41,8 @@
     color: white;
   }
   .project{
-    //max-height: 400px;
+    background-size: cover;
+    height: 300px;
     opacity: 0;
     color: white;
     position: relative;
@@ -80,59 +76,42 @@
       line-height: 0px;
       text-align:center;
       vertical-align: middle;
-      padding-top: 10px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       opacity: 0;
-      height: auto;
-      z-index: 3;
       position: absolute;
-      top: 40%;
-      height: 25%;
+      z-index: 3;
+      top: 50%;
+      transform: translateY(-50%);
+      height: auto;
       width: 100%;
       background-color: rgba(0, 0, 0, 0.7);
+      p {
+        margin-bottom: 0;
+      }
     }
   }
   .one{
-    background-image: url("../img/projekty/login_mini.jpg");
-    background-size: cover;
-    height: 300px;
+    background-image: url("../img/projekty/workstyle.jpg");
     width: 400px;
   }
   .two{
-    background-image: url("../img/projekty/dash_mini.jpg");
-    background-size: cover;
-    height: 300px;
+    background-image: url("../img/projekty/sc_mini.jpg");
     width: 600px;
   }
   .three{
-    background-image: url("../img/projekty/gry_mini.jpg");
-    background-size: cover;
-    height: 300px;
+    background-image: url("../img/projekty/fly.jpg");
     width: 600px;
   }
   .four{
-    background-image: url("../img/projekty/zbych_mini.jpg");
-    background-size: cover;
-    height: 300px;
+    background-image: url("../img/projekty/centrum.jpg");
     width: 400px;
   }
   .five{
-    background-image: url("../img/projekty/fgc_mini.jpg");
-    background-size: cover;
-    height: 300px;
-    width: 400px;
-  }
-  .six{
-    background-image: url("../img/projekty/fly.jpg");
-    background-size: cover;
-    height: 300px;
-    width: 600px;
-  }
-  .seven{
     background-image: url("../img/projekty/organic_mini.jpg");
-    background-size: cover;
-    height: 300px;
     width: 1020px;
   }
+
 }
 @media (min-width: 600px) and (max-width: 1100px){
   .flex{
